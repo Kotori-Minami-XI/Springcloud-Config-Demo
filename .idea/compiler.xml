@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Feign-SDK" />
+        <module name="Eureka-Provider-1" />
         <module name="Eureka-Server" />
         <module name="Eureka-Consumer-1" />
-        <module name="Eureka-Provider-1" />
+        <module name="Feign-SDK" />
         <module name="Eureka-Config" />
       </profile>
     </annotationProcessing>

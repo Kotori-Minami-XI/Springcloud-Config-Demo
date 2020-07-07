@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev # 选择配置
+    active: prod # 选择配置
 
 --- # 选择8001端口
 server:
@@ -8,9 +8,10 @@ server:
 spring:
   profiles: prod
   application:
-    name: feign-consumer-group #config-eureka-client？
+    name: feign-consumer-group
   cloud:
     config:
+      name: config-eureka-prod    # 读取的配置名称
       uri: http://127.0.0.1:10001 # 配置中心的地址端口
       label: master
       profile: prod
@@ -21,9 +22,10 @@ server:
 spring:
   profiles: dev
   application:
-    name: feign-consumer-group #config-eureka-client？
+    name: feign-consumer-group
   cloud:
     config:
+      name: config-eureka-dev     # 读取的配置名称
       uri: http://127.0.0.1:10001 # 配置中心的地址端口
       label: master
       profile: dev

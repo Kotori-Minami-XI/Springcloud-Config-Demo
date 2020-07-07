@@ -2,6 +2,7 @@ package com.Kotori.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
@@ -11,20 +12,20 @@ import org.springframework.stereotype.Component;
  * 可以通过 @Value 或 @ConfigurationProperties 来获取
  */
 @Component
-@ConfigurationProperties(prefix = "data")
+@RefreshScope // 自动刷新配置  http://localhost:8001/actuator/refresh
 public class GitConfig {
     @Bean
     public GitConfig getConfig() {
         return new GitConfig();
     }
 
-//    @Value("${data.env}")
+    @Value("${data.env}")
     private String env;
 
-//    @Value("${data.user.username}")
+    @Value("${data.user.username}")
     private String username;
 
-//    @Value("${data.user.password}")
+    @Value("${data.user.password}")
     private String password;
 
     public String getEnv() {

@@ -24,14 +24,18 @@ hystrix:
         requestVolumeThreshold: 5   # 该属性设置滚动窗口中将使断路器跳闸的最小请求数量
 
 management:
+  server:
+    port: 8001
   endpoint:
     health:
       show-details: always #显示熔断器详细信息 http://127.0.0.1:8001/actuator/health
+    shutdown:
+      enabled: true
+  endpoints:
+    enabled-by-default: true
     web:
       exposure:
         include: '*'
-    shutdown:
-      enabled: true
 
 #集群化监控配置
 turbine:
