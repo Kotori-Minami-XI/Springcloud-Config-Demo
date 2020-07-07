@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Eureka-Config/Eureka-Config.iml" filepath="$PROJECT_DIR$/Eureka-Config/Eureka-Config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Feign-Consumer-1/Eureka-Consumer-1.iml" filepath="$PROJECT_DIR$/Feign-Consumer-1/Eureka-Consumer-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Feign-Provider-1/Eureka-Provider-1.iml" filepath="$PROJECT_DIR$/Feign-Provider-1/Eureka-Provider-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eureka-Server/Eureka-Server.iml" filepath="$PROJECT_DIR$/Eureka-Server/Eureka-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Feign-SDK/Feign-SDK.iml" filepath="$PROJECT_DIR$/Feign-SDK/Feign-SDK.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev # 选择配置
+
+--- # 选择8001端口
+server:
+  port: 8001
+spring:
+  profiles: prod
+  application:
+    name: feign-consumer-group #config-eureka-client？
+  cloud:
+    config:
+      uri: http://127.0.0.1:10001 # 配置中心的地址端口
+      label: master
+      profile: prod
+
+--- # 选择8002端口
+server:
+  port: 8002
+spring:
+  profiles: dev
+  application:
+    name: feign-consumer-group #config-eureka-client？
+  cloud:
+    config:
+      uri: http://127.0.0.1:10001 # 配置中心的地址端口
+      label: master
+      profile: dev

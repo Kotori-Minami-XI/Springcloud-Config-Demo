@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Feign-SDK" />
+        <module name="Eureka-Server" />
+        <module name="Eureka-Consumer-1" />
+        <module name="Eureka-Provider-1" />
+        <module name="Eureka-Config" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="Eureka-Config" target="1.8" />
+      <module name="Eureka-Consumer-1" target="1.8" />
+      <module name="Eureka-Provider-1" target="1.8" />
+      <module name="Eureka-Server" target="1.8" />
+      <module name="Feign-SDK" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Eureka-Config" options="-parameters" />
+      <module name="Eureka-Consumer-1" options="-parameters" />
+      <module name="Eureka-Provider-1" options="-parameters" />
+      <module name="Eureka-Server" options="-parameters" />
+    </option>
+  </component>
+</project>

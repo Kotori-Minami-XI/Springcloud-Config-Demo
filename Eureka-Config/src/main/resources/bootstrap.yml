@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-eureka-server # 应用名称，会在Eureka中显示
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Kotori-Minami-XI/springcloud-configs #配置文件所在仓库
+          username: 543566812@qq.com
+          password: 19926172xzXZ
+          default-label: master #配置文件分支
+          search-paths: config  #配置文件所在根目录
